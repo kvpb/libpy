@@ -1,10 +1,5 @@
 def nF( n ):
-  if ( n >= 0 ):
-    return F( n )
-  #if ( n == -1 ):
-  #  return -( n )
-  else:# if ( -2 >= n ):
-    return -1**( n + 1 ) * ( nF( n - 1 ) + nF( n - 2 ) ) #return -1**( n + 1 ) * F( n )
+  return -1**( -( n ) + 1 ) * F( -( n ) )
 # KVPB's RCSVNFIB
 
 def F( n ):
@@ -16,13 +11,19 @@ def F( n ):
     return F( n - 1 ) + F( n - 2 )
 # KVPB's RCSVFIB
 
-print(F( -3 ))
-print(F( -2 ))
-print(F( -1 ))
-print(F(  0 ))
-print(F(  1 ))
-print(F(  2 ))
-print(F(  3 ))
+print(F( -20 ))
+print(F( -10 ))
+print(F(  -5 ))
+print(F(  -3 ))
+print(F(  -2 ))
+print(F(  -1 ))
+print(F(   0 ))
+print(F(   1 ))
+print(F(   2 ))
+print(F(   3 ))
+print(F(   5 ))
+print(F(  10 ))
+print(F(  20 ))
 #   debug code
 
 # Fibonacci.py
